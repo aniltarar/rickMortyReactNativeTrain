@@ -1,20 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, Text } from 'react-native'
+import React from 'react'
+import { createStaticNavigation, NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './src/screens/HomeScreen';
+import SearchScreen from './src/screens/SearchScreen';
+import Episodes from './src/screens/Episodes';
+import Characters from './src/screens/Characters';
 
-export default function App() {
+const App = () => {
+
+  const Stack = createNativeStackNavigator(); // Burada createNativeStackNavigator ile beraber Stack oluşturuluyor
+
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <NavigationContainer> 
+      {/*  NavigationContainer ile uygulama navigasyonunu sarmalıyoruz */}
+      {/* Stack.Navigator ile ekranlar arasında geçiş yapabilmemizi sağlıyoruz */}
+      {/* screenOptions ile başlık ayarlarını yapıyoruz */}
+        {/* Stack.Screen ile beraber sayfaları belirliyoruz. */}
+      <Stack.Navigator screenOptions={{headerTitle:"React Native Uygulaması"}}>
+        <Stack.Screen name="Home" component = {HomeScreen} />
+        <Stack.Screen name="Search" component = {SearchScreen} />
+        <Stack.Screen name="Episodes" component = {Episodes}/>
+        <Stack.Screen name="Characters" component = {Characters} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App
