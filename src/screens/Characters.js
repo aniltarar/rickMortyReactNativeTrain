@@ -48,7 +48,7 @@ const Characters = () => {
       )
       setFilteredCharacters(filtered)
     }
-  },[search, characters])
+  },[search,characters])
 
 
   // Eğer loading true ise, bir yükleme mesajı gösterebiliriz.

@@ -7,6 +7,7 @@ import SearchScreen from './src/screens/SearchScreen';
 import Episodes from './src/screens/Episodes';
 import Characters from './src/screens/Characters';
 import CharacterDetail from './src/screens/CharacterDetail';
+import EpisodeDetail from './src/screens/EpisodeDetail';
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
         <Stack.Screen name="Episodes" component = {Episodes}/>
         <Stack.Screen name="Characters" component = {Characters} />
         <Stack.Screen name="CharacterDetail" component = {CharacterDetail} />
+        <Stack.Screen name="EpisodeDetail" component = {EpisodeDetail} />
       </Stack.Navigator>
     </NavigationContainer>
 

@@ -21,12 +21,7 @@ const HomeScreen = ({ navigation }) => {
         Screens List 
       </Text>
         <ScrollView className="w-full">
-          <Pressable
-            className="bg-[#6bc514] p-4 rounded-lg m-2 "
-            onPress={() => navigation.navigate("Search")}
-          >
-            <Text className="text-white text-lg font-semibold ">Search</Text>
-          </Pressable>
+          
           <Pressable
             className="bg-[#6bc514] p-4 rounded-lg m-2 "
             onPress={() => navigation.navigate("Episodes")}
