@@ -9,7 +9,7 @@ const CharacterBox = ({ character }) => {
 
   return (
     <TouchableOpacity
-     className="flex-col  bg-zinc-800 p-4 rounded-lg items-center justify-center mb-4"
+     className="flex-col  bg-zinc-800 p-4 rounded-lg items-center justify-center mb-4 shadow-2xl"
      onPress={() => navigation.navigate("CharacterDetail", { character })} // onPress ile karakter kutusuna tıklandığında karakter detay sayfasına yönlendiriyoruz.
      >
       <Image

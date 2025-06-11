@@ -9,7 +9,7 @@ const CharacterDetail = () => {
   // Bu sayede karakter detaylarını bu bileşende kullanabileceğiz.
 
   return (
-    <ScrollView className="flex-1 bg-black p-4">
+    <ScrollView className="flex-1 bg-zinc-800 p-4">
       <Image
         source={{ uri: character.image }}
         className="w-full h-96 rounded-xl mb-6"
