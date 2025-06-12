@@ -70,9 +70,6 @@ const Characters = () => {
         contentContainerStyle={{ padding: 16 }}
         showsVerticalScrollIndicator={false}
       />
-      
-        
-      
     </SafeAreaView>
   
   )

@@ -19,3 +19,5 @@ const SearchBar = ({search,setSearch}) => {
 }
 
 export default SearchBar
+
+// Lokalizasyon ve renk paleti ekle

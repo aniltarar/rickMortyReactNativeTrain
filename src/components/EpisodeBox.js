@@ -21,3 +21,5 @@ const EpisodeBox = ({ episode }) => {
 };
 
 export default EpisodeBox;
+
+// Bu komponent sadece görsel hale gelsin. Dinamizm'i başka şekilde hallet.

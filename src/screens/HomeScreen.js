@@ -4,7 +4,6 @@ import React from "react";
 const HomeScreen = ({ navigation }) => {
   return (
     <View className="flex flex-col h-full bg-[#6bc514] ">
-
       <View className="h-1/2 flex flex-col items-center justify-center mx-4 ">
         <Text className="text-3xl font-bold text-white  ">
           Rick & Morty API App
@@ -17,11 +16,8 @@ const HomeScreen = ({ navigation }) => {
       </View>
 
       <View className="flex flex-col items-center justify-center w-full  bg-black h-1/2 ">
-      <Text className="text-3xl font-bold text-white mb-4">
-        Screens List 
-      </Text>
+        <Text className="text-3xl font-bold text-white mb-4">Screens List</Text>
         <ScrollView className="w-full">
-          
           <Pressable
             className="bg-[#6bc514] p-4 rounded-lg m-2 "
             onPress={() => navigation.navigate("Episodes")}
@@ -36,16 +32,7 @@ const HomeScreen = ({ navigation }) => {
               Characters
             </Text>
           </Pressable>
-            
-            
-
-
-
         </ScrollView>
-
-        
-      
-      
       </View>
     </View>
   );

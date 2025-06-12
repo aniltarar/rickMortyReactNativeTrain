@@ -29,3 +29,8 @@ export const fetchEpisodes = async () => {
     throw error;
   }
 }
+
+// protokol vs, diğer farklı api istekleri için uygun hale getir. network yapısını axios üzerinden genele yaymaya calıs
+
+//  mvvm-c
+// mvvm
